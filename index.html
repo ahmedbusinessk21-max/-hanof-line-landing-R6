@@ -191,7 +191,7 @@
     <div class="hero-content">
       <div class="hero-badge">خصم اليوم الوطني ١٠٪</div>
       <h1 class="hero-title">خفيفة عليك مثل نسمة<br>أنيقة مثل ما تستاهلين</h1>
-      <p class="hero-sub">كريب خفيف يعدي الهوا وما يشف، وجوبير كروشيه يمتد من الياقة لطرف العباية وعلى الأكمام — ومعها طرحة هدية مجانية تكمل الإطلالة</p>
+      <p class="hero-sub">كريب خفيف يعدي الهوا وما يشف، وجوبير كروشيه يمتد من الياقة لطرف العباية وعلى الأكمام — ومعها طرحة هدية  تكمل الإطلالة</p>
       <a href="#order" class="btn btn-outline">اطلبيها الحين</a>
     </div>
   </section>
@@ -307,7 +307,7 @@
   <section class="order-section" id="order">
     <div class="container">
       <h2>اختاري مقاسك وأكملي طلبك</h2>
-      <p class="sub">حددي مقاسك من تحت عشان تقدرين تكملين الطلب</p>
+      <p class="sub">حددي مقاسك المناسب حتي تقدرين تكملين الطلب</p>
       <div class="size-grid">
         <button type="button" class="size-btn" data-size="50">50</button>
         <button type="button" class="size-btn" data-size="52">52</button>
@@ -401,15 +401,14 @@
 
 <script>
   /* ==========================================================
-     مكان اللينكات: استبدلي القيم تحت بلينك الدفع الخاص بكل مقاس
      ========================================================== */
   var sizeLinks = {
-    "50": "REPLACE_LINK_50",
-    "52": "REPLACE_LINK_52",
-    "54": "REPLACE_LINK_54",
-    "56": "REPLACE_LINK_56",
-    "58": "REPLACE_LINK_58",
-    "60": "REPLACE_LINK_60"
+    "50": "https://hanof-line.com/payment/p336204064?quantity=1&options%5B1400994738%5D=592547305",
+    "52": "https://hanof-line.com/payment/p336204064?quantity=1&options%5B1400994738%5D=2101259498",
+    "54": "https://hanof-line.com/payment/p336204064?quantity=1&options%5B1400994738%5D=1327221739",
+    "56": "https://hanof-line.com/payment/p336204064?quantity=1&options%5B1400994738%5D=417393396",
+    "58": "https://hanof-line.com/payment/p336204064?quantity=1&options%5B1400994738%5D=1791822325",
+    "60": "https://hanof-line.com/payment/p336204064?quantity=1&options%5B1400994738%5D=1152002294"
   };
 
   var selectedSize = null;
@@ -434,7 +433,7 @@
   cta.addEventListener('click', function(e){
     if(!selectedSize){
       e.preventDefault();
-      hint.textContent = 'اختاري المقاس أول عشان تكملين الطلب';
+      hint.textContent = 'اختاري المقاس حتي تكملين الطلب';
       hint.classList.add('err', 'shake');
       document.querySelector('.size-grid').scrollIntoView({behavior:'smooth', block:'center'});
       setTimeout(function(){ hint.classList.remove('shake'); }, 400);
